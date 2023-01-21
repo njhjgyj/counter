@@ -5,31 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style></style>
+    <style>
+        
+    </style>
 </head>
 <style>
     #mainDiv{
-    color = "white";
+    color: "white";
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: white;
     }
     
-    #myCounterH3Tag{
-   
-    color = "white"
-    
+    .span{
+        display: flex;
+        justify-content: center;
     }
     
+    header{
+        display: flex;
+        justify-content: center;
+        background-color: red;
+        text-align: center;
+        border-radius: 20px;
+        
+    }
+    
+    .span2{
+        display: flex;
+        justify-content: center;
+        background-color: red;
+    }
+    
+    button{
+        margin: 2vh;
+        width: 80px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: blue;
+    }
+      
+    #displayCounterH3Tag{
+        background-color: purple;
+        padding: 3vh;
+        border-radius: 20px;
+    }
+      
 </style>
 <body>
 
-<div id="mainDiv">
+<header>
+    
+    <span class="span1"> <h3 id="myCounterH3Tag"> My Counter </h3> </span>
+    
+</header>
 
-<span class="span1"> <h3 id="myCounterH3Tag> My Counter </h3> </span>
+
+
+<div id="mainDiv">
 
 <div id="div1"> 
 
 <span class="span2"> <h3 id="displayCounterH3Tag"> 0 </h3> </span> <br> <br>
 
+<div id="div2">
+    
 <button id="btn1ForDecrement"> - </button> <button id="btn2ForZero"> 0 </button> <button id="btn3ForIncrement"> + </button>
+
+</div>
 
 </div>
 
@@ -55,7 +101,7 @@ document.getElementById("displayCounterH3Tag").innerHTML = --number;
 
 getBtn2.addEventListener("click", function() {
 
-document.getElementById("displayCounterH3Tag").innerText = 0;
+document.getElementById("displayCounterH3Tag").innerText = number = 0;
 
 });
 
