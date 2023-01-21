@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+<style>
+    #mainDiv{
+    color = "white";
+    }
+    
+    #myCounterH3Tag{
+   
+    color = "white"
+    
+    }
+    
+</style>
+<body>
+
+<div id="mainDiv">
+
+<span class="span1"> <h3 id="myCounterH3Tag> My Counter </h3> </span>
+
+<div id="div1"> 
+
+<span class="span2"> <h3 id="displayCounterH3Tag"> 0 </h3> </span> <br> <br>
+
+<button id="btn1ForDecrement"> - </button> <button id="btn2ForZero"> 0 </button> <button id="btn3ForIncrement"> + </button>
+
+</div>
+
+</div>
+
+</body>
+
+<script> 
+
+let getBtn1 = document.getElementById("btn1ForDecrement");
+
+let getBtn2 = document.getElementById("btn2ForZero");
+
+let getBtn3 = document.getElementById("btn3ForIncrement");
+
+let number = 0;
+
+getBtn1.addEventListener("click", function() {
+
+document.getElementById("displayCounterH3Tag").innerHTML = --number;
+
+});
+
+getBtn2.addEventListener("click", function() {
+
+document.getElementById("displayCounterH3Tag").innerText = 0;
+
+});
+
+getBtn3.addEventListener("click", function() {
+
+document.getElementById("displayCounterH3Tag").innerText = ++number;
+
+});
+
+</script>
+
+</html>
